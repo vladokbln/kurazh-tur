@@ -36,7 +36,7 @@ var path = {
     html:  'src/**/*.html',
     js:    'src/js/**/*.js',
     css:   'src/style/**/*.less',
-    img:   'src/img/**/*.{jpg,png,gif},
+    img:   'src/img/**/*.{jpg,png,gif}',
 		spr:   'src/img/icon/**/*.png',
 		sprSvg:'src/img/icon/**/*.svg',
     fonts: 'srs/fonts/**/*.*'
