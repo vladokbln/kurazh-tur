@@ -1,7 +1,7 @@
 @import 'fonts';
 @import 'libs';
 @import 'vars';
-// @import '../img/sprite/sprite';
+@import '../img/sprite/sprite';
 
 html { 
   line-height: 1;
@@ -54,14 +54,29 @@ button {
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 0 15px;
+	padding: 0 15px;
+	position: relative;
 }
 .icon {
   display: inline-block;
 }
+.button {
+	padding: 0 30px;
+	font-size: 18px;
+	line-height: 50px;
+	color: #222222;
+	background-color: @brightSun;
+	border-radius: 10px;
+	cursor: pointer;
+	border: none;
+
+}
 
 @import 'modules/header';
+@import 'modules/main-nav';
+@import 'modules/main-slider';
 
+@import 'sections/price';
 
 @import 'modules/footer';
 @import 'media';

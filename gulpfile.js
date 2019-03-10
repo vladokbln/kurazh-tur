@@ -141,7 +141,9 @@ gulp.task('sprite:build', function () {
 	.pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.less',
-    imgPath: '../img/sprite/sprite.png'
+		imgPath: '../img/sprite/sprite.png',
+		padding: 2
+
   }));
   return spriteData.pipe(gulp.dest(path.build.spr));
 });
