@@ -40,4 +40,7 @@ $(document).ready(function(){
 	});
 
 	$('select').selectize();
+	$('.nav-toggle').click(function(){
+			$('.header').toggleClass('active')
+	});
 });

@@ -11,7 +11,55 @@
 	// prop
 }	
 @media only screen and (max-width: 992px) { 
-	// prop
+	.main-nav {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		&__list {
+			display: inline-flex;
+			flex-direction: column;
+		}
+		&__item {
+			position: relative;
+			&:hover {
+				.dropdown {
+					position: static;
+					float: right;
+					margin-left: 20px;
+					display: block;
+					background: @brightSun;
+					opacity: 1;
+					&__link {
+						font-weight: bold;
+						color: #000;
+						&:hover {
+							color: #000;
+						}
+					}
+				}
+				.main-nav {
+					&__link {
+						&--arrow {
+							&::after {
+								top: 2px;
+								transform: (rotate(-90deg));
+								transition: .3s;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+	.dropdown {
+		display: none;
+	}
+	.nav-toggle {
+		display: inline-block;
+	}
 }	
 @media only screen and (max-width: 768px) { 
 	// prop
