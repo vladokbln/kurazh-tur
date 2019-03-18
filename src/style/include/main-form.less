@@ -1,0 +1,64 @@
+.main-form {
+		&__wrap	{
+			background-color: rgba(0,0,0,.6);
+			padding: 30px 30px;
+		}
+		input {
+			padding: 5px;
+			margin: 0 15px;
+			background: none;
+			border: none;
+			border-bottom: 1px solid fade(#fff, 60%);
+			color: #fff;
+			font-size: 18px;
+			// line-height: 30px;
+			&[type="text"] {
+				width: 140px;
+			}
+			&[type="email"] {
+				width: 190px;
+			}
+			&[type="tel"] {
+				width: 150px;
+			}
+			&::placeholder {
+				color: fade(#fff, 60%);
+			}
+		}
+		.selectize-control {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 40px 0 15px;
+		}
+		.selectize-control.single .selectize-input.input-active, .selectize-input {
+			background: none;
+		}
+		.selectize-input {
+			width: 180px;
+			padding: 4px 5px;
+			border: none;
+			
+			border-radius: 0; 
+			&.items {
+				color: fade(#fff, 100%);
+				line-height: 1.1;
+				border-bottom: 1px solid fade(#fff, 60%);
+			}
+		}
+		.selectize-dropdown {
+			padding: 10px 5px;
+		}
+		.selectize-dropdown, .selectize-input, .selectize-input input {
+			font-size: 18px;
+		}
+		.selectize-dropdown-content .option.active, .selectize-dropdown-content .option:hover {
+			color: @brightSun;
+			cursor: default;
+			background-color: #fff;
+		}
+		.selectize-control.single .selectize-input:after {
+			border: none;
+			.sprite(@arrow-down-white);
+		}
+		
+}

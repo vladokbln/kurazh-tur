@@ -1,5 +1,6 @@
 //=../bower_components/jquery/dist/jquery.js
 //=../bower_components/slick-carousel/slick/slick.js
+//=../bower_components/selectize/dist/js/standalone/selectize.js
 
 $(document).ready(function(){
   $('.main-slider__js').slick({
@@ -37,4 +38,6 @@ $(document).ready(function(){
 			}
 		]
 	});
+
+	$('select').selectize();
 });
