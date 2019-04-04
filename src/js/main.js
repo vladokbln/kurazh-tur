@@ -9,7 +9,7 @@ $(document).ready(function(){
 		customPaging : function(slider, i) {
 			return '<a class="main-slider__dot"></a>';
 		},
-		appendDots: '.main-slider__dots'
+		appendDots: '.main-slider__dots .container'
 	});
 	
 	$('.price-tabs li').click(function() {
@@ -30,7 +30,7 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 1200,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1

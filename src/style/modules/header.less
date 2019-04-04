@@ -16,6 +16,7 @@
 	}
 	&-descr {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: flex-end;
 		align-items: center;
 		padding: 10px 5px 15px;
@@ -95,6 +96,9 @@
 		display: block;
 		background: @celeste;
 		border-radius: 5px;
+		.header.active & {
+			background-color: #000;
+		}
 		&--top {
 			top: 3px;
 			transition: .3s;
