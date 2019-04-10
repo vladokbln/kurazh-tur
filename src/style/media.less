@@ -78,7 +78,7 @@
 	.nav-toggle {
 		display: inline-block;
 		&__wrap {
-			margin: 40px 0;
+			// margin: 40px 0;
 		}
 	}
 	.our-advantages {
@@ -93,9 +93,24 @@
 			max-width: 100%;
 		}
 	}
+	.footer {
+		&-info {
+			width: 70%;
+			margin-bottom: 20px;
+		}
+		&-nav {
+			width: 33%;
+			margin: 40px 0;
+		}
+		&-support {
+			width: 33%;
+			margin: 40px 0;
+		}
+	}
 }	
 @media only screen and (max-width: 814px) { 
 	.header-descr {
+		display: none;
 		&__social {
 			margin-top: 20px;
 			width: 100%;
@@ -149,6 +164,11 @@
 		}
 		.selectize-control {
 			margin: 0 15px;
+		}
+	}
+	.footer {
+		&-info {
+			width: 100%;
 		}
 	}
 }
@@ -217,17 +237,6 @@
 	.header {
 		&-inner {
 			flex-wrap: wrap;
-		}
-		&-logo {
-			margin: 0 auto 20px;
-		}
-	}
-	.nav-toggle {
-		&__wrap {
-			position: absolute;
-			top: 40px;
-			margin: 0;
-			right: 20px;
 		}
 	}
 }	

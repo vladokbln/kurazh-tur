@@ -5,10 +5,12 @@
 	right: 0;
 	margin: 0 auto;
 	z-index: 1000;
+
 	&-inner {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 10px;
+		align-items: center;
+		padding: 10px 0;
 	}
 	&-content {
 		display: flex;
@@ -58,6 +60,10 @@
 			margin-left: 60px;
 		}
 	}
+	&.fixed {
+		position: fixed;
+		background: rgba(0,76,132,1);
+	}
 }
 .social {
 	display: flex;
@@ -87,6 +93,7 @@
 	cursor: pointer;
 	&__wrap {
 		text-align: right;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 	&__line {
 		position: absolute;

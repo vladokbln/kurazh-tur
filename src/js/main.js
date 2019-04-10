@@ -43,4 +43,19 @@ $(document).ready(function(){
 	$('.nav-toggle').click(function(){
 			$('.header').toggleClass('active')
 	});
+	
+
+});
+
+$(window).on('load', function(){
+	$(window).scroll(function(){
+		var elem = $('.header'),
+				top = $(this).scrollTop();
+		if (top >= 70) {
+			elem.addClass('fixed')
+		} 
+		else {
+			elem.removeClass('fixed');
+		}
+	});
 });
