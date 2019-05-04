@@ -17269,6 +17269,7 @@ $(document).ready(function(){
   $('.main-slider__js').slick({
 		arrows: false,
 		dots: true,
+		autoplay: true,
 		customPaging : function(slider, i) {
 			return '<a class="main-slider__dot"></a>';
 		},
